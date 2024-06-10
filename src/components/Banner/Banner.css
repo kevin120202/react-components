@@ -1,0 +1,55 @@
+.banners-container {
+    border: 1px solid black;
+    margin-top: 1em;
+    padding: 1em;
+}
+
+.banner {
+    padding: 1em;
+    margin: 1em 0;
+}
+
+.banner span {
+    display: flex;
+    gap: .5em;
+}
+
+.banner p {
+    margin-left: 1.7em;
+}
+
+.success {
+    background-color: #ECFDF5;
+    color: #047857;
+}
+
+.success-title {
+    color: #065F46;
+}
+
+.warning {
+    background-color: #FFFBEB;
+    color: #B45309;
+}
+
+.warning-title {
+    color: #92400E;
+}
+
+.error {
+    background-color: #FEF2F2;
+    color: #B45309;
+}
+
+.error-title {
+    color: #92400E;
+}
+
+.neutral {
+    background-color: #EFF6FF;
+    color: #1C51B9;
+}
+
+.neutral-title {
+    color: #1E40AF;
+}

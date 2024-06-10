@@ -1,0 +1,70 @@
+.badges-container {
+    margin-top: 1em;
+    border: 1px solid black;
+    padding: 1em;
+}
+
+.badge {
+    background-color: #F3F4F6;
+    max-width: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3px 18px;
+}
+
+.square,
+.round {
+    display: flex;
+    align-items: center;
+    gap: 1em;
+}
+
+.items {
+    display: flex;
+    gap: 1em;
+}
+
+.gray {
+    background-color: #F3F4F6;
+    color: black;
+}
+
+.red {
+    background-color: #FEE2E2;
+    color: #991B1B;
+}
+
+.yellow {
+    background: #FEF3C7;
+    color: #92400E;
+}
+
+.green {
+    background: #D1FAE5;
+    color: #065F46;
+}
+
+.blue {
+    background: #DBEAFE;
+    color: #1E40AF;
+}
+
+.indigo {
+    background: #E0E7FF;
+    color: #3730A3;
+}
+
+.purple {
+    background: #EDE9FE;
+    color: #92400E;
+}
+
+.pink {
+    background: #FCE7F3;
+    color: #9D174D;
+}
+
+.round {
+    border-radius: 12px;
+}
