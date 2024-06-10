@@ -1,6 +1,10 @@
 import React from 'react'
 import Badge from './components/Badge/Badge'
 import Banner from './components/Banner/Banner'
+import Cards from './components/Cards/Cards'
+import icon from "./assets/cards-Icon.png"
+import head_img from "./assets/Image.png"
+import Testimonials from './components/Testimonials/Testimonials'
 
 function App() {
     return (
@@ -59,6 +63,23 @@ function App() {
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere officia pariatur deleniti temporibus praesentium maiores nihil aliquid, quidem expedita natus! Ducimus iste dolorum commodi vel sunt facere corrupti qui laborum.
                 </Banner>
                 <Banner title="Congratulations" status="success" />
+            </div>
+            <div className="cards-container">
+                <h1>Cards</h1>
+                <div className="card-items">
+                    <Cards title="Easy Deployment" icon={icon}>
+                        This methodology allows clients to make updates to data elements of the interface without assistance.
+                    </Cards>
+                    <Cards title="Easy Deployment" icon={icon}>
+                        This methodology allows clients to make updates to data elements of the interface without assistance.
+                    </Cards>
+                </div>
+            </div>
+            <div className="testimonials-container">
+                <h1>Testimonials</h1>
+                <Testimonials name="Kevin" title="Software Engineer" img={head_img}>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed urna nulla vitae laoreet augue. Amet feugiat est integer dolor auctor adipiscing nunc urna, sit.
+                </Testimonials>
             </div>
         </div>
     )
