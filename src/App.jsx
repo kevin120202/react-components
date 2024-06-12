@@ -7,6 +7,9 @@ import head_img from "./assets/Image.png"
 import Testimonials from './components/Testimonials/Testimonials'
 
 function App() {
+    const colors = ["gray", "red", "yellow", "green", "blue", "indigo", "purple", "pink"]
+
+
     return (
         <div className='container'>
             <div className='badges-container'>
@@ -15,35 +18,17 @@ function App() {
                     <div className="square">
                         <h2>Square</h2>
                         <div className="items">
-                            <Badge color="gray">
-                                Badge
-                            </Badge>
-                            <Badge color="pink">
-                                Badge
-                            </Badge>
-                            <Badge color="indigo">
-                                Badge
-                            </Badge>
-                            <Badge color="yellow">
-                                Badge
-                            </Badge>
+                            {colors.map(color => (
+                                <Badge color={color}>Badge</Badge>
+                            ))}
                         </div>
                     </div>
                     <div className="round">
                         <h2>Round</h2>
                         <div className="items">
-                            <Badge color="red" isRound={true}>
-                                Badge
-                            </Badge>
-                            <Badge color="purple" isRound={true}>
-                                Badge
-                            </Badge>
-                            <Badge color="blue" isRound={true}>
-                                Badge
-                            </Badge>
-                            <Badge color="green" isRound={true}>
-                                Badge
-                            </Badge>
+                            {colors.map(color => (
+                                <Badge color={color} isRound={true}>Badge</Badge>
+                            ))}
                         </div>
                     </div>
                 </div>
@@ -70,14 +55,14 @@ function App() {
                     <Cards title="Easy Deployment" icon={icon}>
                         This methodology allows clients to make updates to data elements of the interface without assistance.
                     </Cards>
-                    <Cards title="Easy Deployment" icon={icon}>
+                    <Cards title="Easy Deployment">
                         This methodology allows clients to make updates to data elements of the interface without assistance.
                     </Cards>
                 </div>
             </div>
             <div className="testimonials-container">
                 <h1>Testimonials</h1>
-                <Testimonials name="Kevin" title="Software Engineer" img={head_img}>
+                <Testimonials name="May Andersons" title="Software Engineer" img={head_img}>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed urna nulla vitae laoreet augue. Amet feugiat est integer dolor auctor adipiscing nunc urna, sit.
                 </Testimonials>
             </div>

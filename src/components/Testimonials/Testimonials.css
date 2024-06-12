@@ -5,16 +5,25 @@
 }
 
 .testimonial {
-    display: flex;
+    margin-top: 60px;
+    margin-bottom: 60px;
     border: 1px solid black;
+    display: flex;
     align-items: center;
+    height: 300px;
+    position: relative;
     background-color: #2545B8;
     color: white;
-    position: relative;
-    max-width: 1000px;
-    padding: 50px 50px 50px 410px;
+    padding: 2rem;
+}
+
+.info {
+    width: 60%;
+    margin-left: 350px;
 }
 
 .testimonial img {
     position: absolute;
+    width: 30%;
+    top: -40px;
 }
